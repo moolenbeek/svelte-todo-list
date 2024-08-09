@@ -7,6 +7,10 @@
 		{
 			id: '2',
 			text: 'Eggs'
+		},
+		{
+			id: '3',
+			text: 'Banana'
 		}
 	];
 </script>
