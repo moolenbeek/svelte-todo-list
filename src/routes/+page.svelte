@@ -1,15 +1,29 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
+	const LitstItems: ListItem[] = [
+		{
+			id: '1',
+			text: 'Oat Milk'
+		},
+		{
+			id: '2',
+			text: 'Eggs'
+		}
+	];
+</script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
+	<div class="grid">
+		<h1>Todo</h1>
+
+		<ol class="list">
+			{#each LitstItems as ListItem}
 			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
+				<span>{ListItem.id}.</span>
+				<span class="flex-auto">{ListItem.text}</span>
 			</li>
-		</ul>
+			{/each}
+		</ol>
+
+		<button class="my-4 p-2 rounded variant-glass-primary" on:click={() => console.log('add')}>Add</button>
 	</div>
 </div>
