@@ -16,13 +16,13 @@
 	{#each listItems as ListItem, i (i)}
 		<li>
 			<span>{i + 1}</span>
-			<input class="input" type="text" placeholder="Input" value={ListItem.text} />
-			<button type="button" class="btn variant-filled">x</button>
+			<input class="input" type="text" placeholder="Input" value={ListItem.text} disabled />
+			<button type="button" class="btn variant-ghost-error">x</button>
 		</li>
 	{/each}
 	<li>
 		<span>{listItems.length + 1}</span>
 		<input class="input" type="text" placeholder="Input" />
-		<button type="button" class="btn variant-filled">+</button>
+		<button type="button" class="btn variant-ghost-primary">+</button>
 	</li>
 </ol>
