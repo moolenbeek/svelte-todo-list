@@ -9,5 +9,5 @@ declare namespace App {
 }
 
 declare class ListItem {
-	text: string
+	text: string;
 }
