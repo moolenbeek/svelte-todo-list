@@ -7,3 +7,7 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+declare class ListItem {
+	text: string
+}
